@@ -1,6 +1,7 @@
 {
   "devDependencies": {
     "@babel/preset-env": "^7.16.11",
+    "@fortawesome/fontawesome-free": "^6.1.1",
     "babel-loader": "^8.2.4",
     "css-loader": "^6.7.1",
     "eslint": "^7.32.0",
@@ -19,6 +20,7 @@
   },
   "dependencies": {
     "core-js": "^3.21.1",
+    "font-awesome": "^4.7.0",
     "lit": "^2.2.1",
     "lit-element": "^3.2.0"
   }
