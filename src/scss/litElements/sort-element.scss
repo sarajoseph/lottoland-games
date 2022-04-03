@@ -1,0 +1,77 @@
+@import '../index';
+
+.hide{
+	display: none!important;
+}
+
+.sort_menu__container{
+	height: 50px;
+	position: relative;
+	.sort_menu__content{
+		background-color: $color__background__blue--dark;
+		border-radius: 5px;
+		color: $color__white02;
+		left: 0;
+		position: absolute;
+		top: 0;
+		width: fit-content;
+		z-index: 2;
+	}
+
+	.sort_menu__label{
+		font-size: 14px;
+		padding: 10px;
+		span{
+			font-family: $fontFamily__DaxlineProExtraBold;
+			font-weight: bold;
+			text-transform: uppercase;
+		}
+		.sort-icon{
+			margin-right: 10px;
+		}
+	}
+
+	.sort_menu__items{
+		background-color: $color__background__blue--dark;
+		border-radius: 5px;
+		display: block;
+		opacity: 1;
+		height: 100px;
+		padding: 10px 20px;
+		visibility: visible;
+		-moz-transition: all 3s ease-out;
+		-o-transition: all 3s ease-out;
+		-webkit-transition: all 3s ease-out;
+		transition: all 3s ease-out;
+
+		.sort_menu__item{
+			align-items: center;
+			display: flex;
+			gap: 10px;
+			justify-content: space-evenly;
+			padding: 5px 0;
+			&__icon{
+				border: 1px solid $color__white02;
+				border-radius: 50px;
+				height: 20px;
+				width: 20px;
+			}
+			&__name{
+				flex-grow: 1;
+				font-family: $fontFamily__DaxlineProLight;
+				font-size: 12px;
+			}
+			&__icon.selected{
+				background-color: #f72585;
+				box-shadow: $color__background__blue--dark 0px 0px 0px 5px inset;
+			}
+		}
+	}
+
+	
+	.sort_menu__items.hide{
+		opacity: 0;
+		height: 0;
+		visibility: hidden;
+	}
+}

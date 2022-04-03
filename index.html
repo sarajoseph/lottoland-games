@@ -1,14 +1,48 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>sarajoseph.github.io/lottoland-games</title>
-	<link rel="stylesheet" href="./build/styles.css">
-	<script src="./build/main.js" defer></script>
-</head>
-<body>
-	lottoland-games
-</body>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>sarajoseph.github.io/lottoland-games</title>
+		<link href="src/fontawesome/css/all.css" rel="stylesheet">
+		<!--<link rel="stylesheet" href="./build/styles.css">-->
+		<script src="./build/main.js" defer></script>
+		<style>
+			@font-face {
+				font-family: 'DaxlineProRegular';
+				src: url('src/fonts/DaxlinePro-Regular.otf');
+				src: url('src/fonts/DaxlinePro-Regular.otf') format('opentype');
+			}
+			@font-face {
+				font-family: 'DaxlineProExtraBold';
+				src: url('src/fonts/DaxlinePro-ExtraBold.otf');
+				src: url('src/fonts/DaxlinePro-ExtraBold.otf') format('opentype');
+			}
+			@font-face {
+				font-family: 'DaxlineProLight';
+				src: url('src/fonts/DaxlinePro-Light.otf');
+				src: url('src/fonts/DaxlinePro-Light.otf') format('opentype');
+			}
+			body{
+				background-color: #1e2439;
+				background-image: linear-gradient(to bottom left, #1e2439, #353b4d);
+				background-repeat: no-repeat;
+				margin: auto;
+				max-width: 1280px;
+				padding: 20px;
+			}
+			@media only screen and (min-width: 769px){
+				body{
+					padding: 50px;
+				}
+			}
+		</style>
+	</head>
+
+	<body>
+		<page-container></page-container>
+	</body>
+
 </html>

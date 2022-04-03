@@ -1,0 +1,19 @@
+$fontsPath: '../fonts/';
+
+@font-face {
+	font-family: 'DaxlineProRegular';
+	src: url($fontsPath+'DaxlinePro-Regular.otf');
+	src: url($fontsPath+'DaxlinePro-Regular.otf') format('opentype');
+}
+
+@font-face {
+	font-family: 'DaxlineProExtraBold';
+	src: url($fontsPath+'DaxlinePro-ExtraBold.otf');
+	src: url($fontsPath+'DaxlinePro-ExtraBold.otf') format('opentype');
+}
+
+@font-face {
+	font-family: 'DaxlineProLight';
+	src: url($fontsPath+'DaxlinePro-Light.otf');
+	src: url($fontsPath+'DaxlinePro-Light.otf') format('opentype');
+}

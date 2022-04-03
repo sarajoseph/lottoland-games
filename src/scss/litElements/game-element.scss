@@ -1,0 +1,109 @@
+@import '../index';
+
+games-container{
+	border-top: 1px solid rgb(182 183 192 / 12%);
+	display: grid;
+	gap: 2em;
+	grid-template-columns: 1fr;
+	margin-top: 20px;
+	@media only screen and (min-width: $screen__minDesktopSize){
+		grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+	}
+	game-element{
+		align-items: center;
+		background-color: transparent;
+		border-bottom: 1px solid rgb(182 183 192 / 12%);
+		cursor: pointer;
+		display: flex;
+		flex: 1;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		gap: 1em;
+		justify-content: space-between;
+		padding: 20px 10px;
+		
+		@media only screen and (min-width: $screen__minDesktopSize){
+			&:hover{
+				background-color: $color__background__blue--dark;
+				border-bottom: none;
+				border-radius: 10px;
+			}
+		}
+		.game-element__image__container{
+			flex-grow: 1;
+			position: relative;
+			max-width: 96px;
+			@media only screen and (min-width: $screen__minDesktopSize){
+				max-width: 132px;
+			}
+			.info-icon{
+				border: 1px solid white;
+				border-radius: 50px;
+				color: $color__white01;
+				display: block;
+				font-size: 12px;
+				height: 10px;
+				left: 5px;
+				padding: 5px;
+				position: absolute;
+				text-align: center;
+				top: 5px;
+				width: 10px;
+				@media only screen and (min-width: $screen__minDesktopSize){
+					display: none;
+				}
+			}
+			.game-element__img{
+				border-radius: 5px;
+				height: auto;
+				max-width: 96px;
+				@media only screen and (min-width: $screen__minDesktopSize){
+					max-width: 132px;
+				}
+			}
+		}
+		.game-element__info{
+			flex-grow: 3;
+			&--provider,
+			&--minstake{
+				color: $color__white03;
+				font-family: $fontFamily__DaxlineProRegular;
+				font-size: 15px;
+			}
+			&--name{
+				color: $color__white02;
+				font-family: $fontFamily__DaxlineProExtraBold;
+				font-size: 17px;
+				font-weight: bold;
+				text-transform: uppercase;
+			}
+		}
+		.game-element__button{
+			background-color: $color__button__green01;
+			background-image: linear-gradient(to right, $color__button__green01, $color__button__green02);
+			border-radius: 5px;
+			color: $color__white01;
+			flex-grow: 0;
+			font-family: $fontFamily__DaxlineProRegular;
+			font-weight: bold;
+			padding: 10px;
+			text-align: center;
+			text-decoration: none;
+			visibility: visible;
+			width: 40px;			
+			@media only screen and (min-width: $screen__minDesktopSize){
+				flex-grow: 1;
+				width: auto;
+				visibility: hidden;
+			}
+		}
+		&:hover{
+			.game-element__image__container .info-icon{
+				display: block;
+			}
+			.game-element__button{
+				visibility: visible;
+			}
+		}
+	}
+}
